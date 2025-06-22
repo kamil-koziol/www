@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+
+<div class="hero">
+    <div class="hero-text">
+        <h1>About me</h1>
+        <div>
+            <p>Hello there, I am <b>Kamil</b> and feel free to explore my website ;)</p>
+
+            <p>I am a software developer with a keen interest in <a href="https://www.restorationhealth365.com/post/what-is-optimology-a-new-approach-to-modern-medicine"/>optimology</a>, digital minimalism and free and open source software.</p>
+        </div>
+    </div>
+    <img src="/images/profile_picture.webp" />
+</div>
+
+{{ .Content }}
+
+<div id="projects">
+<h1>Projects</h1>
+
+{{ range (where site.RegularPages "Section" "projects") }}
+    <article>
+      {{ if .Params.external_url }}
+      <span><a href="{{ .Params.external_url }}">{{ .Title }}</a></span> - 
+      {{ else }}
+      <span><a href="{{ .RelPermalink }}">{{ .Title }}</a></span> - 
+      {{ end }}
+      <span>{{ .Description }}</span>
+    </article>
+{{ end }}
+
+<p>See some other cool projects in <a target="_blank" href="https://github.com/kamil-koziol">my Github profile.</a>
+</div>
+
+{{ end }}

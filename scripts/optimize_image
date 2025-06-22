@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Strip directory and extension
+BASENAME=$(basename "$1" | sed 's/\.[^.]*$//')
+
+# Get image width using identify
+WIDTH=$(identify -format "%w" "$1")
+
+# Resize only if width is greater than 800
+if [ "$WIDTH" -gt 800 ]; then
+  magick "$1" -strip -quality 80 -resize 800x "${BASENAME}.webp"
+else
+  magick "$1" -strip -quality 80 "${BASENAME}.webp"
+fi
