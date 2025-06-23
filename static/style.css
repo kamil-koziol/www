@@ -11,6 +11,15 @@
     --link-visited: var(--claret);
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: var(--black);
+        --text: var(--ghost-white);
+        --link: var(--imperial-red);
+        --link-visited: var(--engineering-orange);
+    }
+}
+
 @font-face {
   font-family: 'Open Sans';
   src: url('fonts/OpenSans-Regular.ttf') format('truetype');
