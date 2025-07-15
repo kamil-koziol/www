@@ -62,6 +62,8 @@ header > ul.menu {
     gap: 8px;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: middle;
 }
 
 header > ul.menu > li::after {
