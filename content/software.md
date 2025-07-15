@@ -43,7 +43,7 @@ solved problems that really don't need to be solved again (think [zellij](https:
 
 * **Editor**: [neovim](https://neovim.io) — I love terminal editors. They play really nice with my way of developing things (tmux, and fast jumping between projects). It offers high customizability with plugins, an infinite number of themes, and you can configure pretty much everything to your liking.
 
-* **Browser**: [Firefox](https://www.mozilla.org/en-US/firefox/) — I use it for the sake of privacy but not to the extremes that [Librewolf](https://librewolf.net) or [Brave](https://brave.com) take it. Add some [Ublock Origin](https://github.com/gorhill/uBlock) and tweak some settings and you're good to go. If they want, they will spy on you regardless.
+* **Browser**: [Librewolf](https://librewolf.net) — Good privacy browser
 
 * **Video Player**: [mpv](https://mpv.io) — Opens most formats and also allows for playing YouTube videos as well! Just enter `mpv <yt_link>` and the video will magically appear there.
 
